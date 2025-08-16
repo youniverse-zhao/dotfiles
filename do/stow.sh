@@ -5,4 +5,4 @@
 #!/bin/bash
 
 brew install stow
-cd "$HOME/dotfiles/dots"; stow .
+cd "$HOME/dotfiles"; stow dots
