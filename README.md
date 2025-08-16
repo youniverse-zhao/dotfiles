@@ -12,10 +12,18 @@ The dotfiles are expected to be used as-is, without any modification. A simple s
 git clone https://github.com/youniverse-zhao/dotfiles.git ~/dotfiles
 ```
 
-🍉 Run the _.setup.sh_ file:
+🍉 Run the _do.sh_ script:
 
 ```shell
-chmod u+x ~/dotfiles/setup.sh; ~/dotfiles/setup.sh
+chmod u+x ~/dotfiles/do.sh; ~/dotfiles/do.sh
 ```
 
 🍉 Add the new Github key (_~/.ssh/keys/xxx.pub_) to Github (https://github.com/settings/keys).
+
+## Cleanup a machine:
+
+🍉 Run the _undo.sh_ script:
+
+```shell
+chmod u+x ~/dotfiles/undo.sh; ~/dotfiles/undo.sh
+```
