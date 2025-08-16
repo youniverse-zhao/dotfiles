@@ -4,4 +4,13 @@
 
 #!/bin/bash
 
-mkdir -p -- "$HOME/Captures" "$HOME/Vault"
+folder_names=("Captures", "Vault", "Notes")
+for folder_name in ${folder_names[@]}
+do
+    if [ ! -d "$HOME/$folder_name" ]; then
+        mkdir -p "$HOME/$folder_name"
+        echo "Folder $folder_name has been created"
+    else
+        echo "Folder $folder_name is available"
+    fi
+done
