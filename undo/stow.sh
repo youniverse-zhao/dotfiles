@@ -4,4 +4,4 @@
 
 #!/bin/bash
 
-cd "$HOME/dotfiles/dots"; stow -D
+cd "$HOME/dotfiles/dots"; stow -D .
