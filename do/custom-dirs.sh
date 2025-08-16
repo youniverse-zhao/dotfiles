@@ -1,6 +1,6 @@
 # Create custom folders
 #
-# ~/dotfiles/scripts/custom-dirs.sh
+# ~/dotfiles/do/custom-dirs.sh
 
 #!/bin/bash
 

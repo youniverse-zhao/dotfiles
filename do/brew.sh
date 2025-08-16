@@ -1,6 +1,6 @@
 # Install apps using Homebrew
 #
-# ~/dotfiles/scripts/brew.sh
+# ~/dotfiles/do/brew.sh
 
 #!/bin/bash
 

@@ -1,6 +1,6 @@
 # Install all Google Fonts
 #
-# ~/dotfiles/scripts/install-google-fonts.sh
+# ~/dotfiles/do/google-fonts.sh
 
 #!/bin/bash
 

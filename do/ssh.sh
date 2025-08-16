@@ -1,6 +1,6 @@
 # Setup SSH keys
 #
-# ~/dotfiles/scripts/ssh.sh
+# ~/dotfiles/do/ssh.sh
 
 #!/bin/bash
 
