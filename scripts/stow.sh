@@ -1,6 +1,6 @@
 # Use stow to create symbolic links for everything
 #
-# ~/dotfiles/scripts/stow-all.sh
+# ~/dotfiles/scripts/stow.sh
 
 #!/bin/bash
 

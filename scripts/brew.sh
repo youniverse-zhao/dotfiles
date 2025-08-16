@@ -1,12 +1,14 @@
 # Install apps using Homebrew
 #
-# ~/dotfiles/scripts/brew-installs.sh
+# ~/dotfiles/scripts/brew.sh
 
 #!/bin/bash
 
 # install homebrew
-brew -v
-if [[ $? != 0 ]] ; then
+if command -v brew &> /dev/null ; then
+    echo "Homebrew is installed"
+else
+    echo "Installing Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
