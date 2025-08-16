@@ -11,19 +11,23 @@ brew install stow
 shopt -s nullglob
 
 project_root_dir="$HOME/dotfiles"
+path_to_dots_dir="$project_root_dir/dots"
 
 # Create ./original to backup existing dot files
 path_to_backup_dir="$project_root_dir/original"
 mkdir -p "$path_to_backup_dir"
 
-items=("$project_root_dir"/.*)
+items=("$path_to_dots_dir"/.*)
 for item in ${items[@]} ; 
 do
     filename=$(basename "$item")
-    path_to_existing_dot_file="$HOME/$filename"
-    if [ -f "$path_to_existing_dot_file" ] || [ -d "$path_to_existing_dot_file" ]; then
-        mv "$path_to_existing_dot_file" "$path_to_backup_dir/"
-        echo "$filename has been backup."
+
+    if [ "$filename" != "." ] && [ "$filename" != ".." ] && [ "$filename" != ".DS_Store" ]; then
+        path_to_existing_dot_file="$HOME/$filename"
+        if [ -f "$path_to_existing_dot_file" ] || [ -d "$path_to_existing_dot_file" ]; then
+            mv "$path_to_existing_dot_file" "$path_to_backup_dir/"
+            echo "$filename has been backup."
+        fi
     fi
 done
 
