@@ -9,7 +9,7 @@ The dotfiles are expected to be used as-is, without any modification. A simple s
 🍉 Clone this repo:
 
 ```shell
-git clone git@github.com:youniverse-zhao/dotfiles.git ~/dotfiles
+git clone https://github.com/youniverse-zhao/dotfiles.git ~/dotfiles
 ```
 
 🍉 Run the _.setup.sh_ file:
