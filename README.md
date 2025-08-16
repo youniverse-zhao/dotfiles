@@ -15,7 +15,7 @@ git clone https://github.com/youniverse-zhao/dotfiles.git ~/dotfiles
 🍉 Run the _.setup.sh_ file:
 
 ```shell
-chmod u+e ~/dotfiles/setup.sh; ~/dotfiles/setup.sh
+chmod u+x ~/dotfiles/setup.sh; ~/dotfiles/setup.sh
 ```
 
 🍉 Add the new Github key (_~/.ssh/keys/xxx.pub_) to Github (https://github.com/settings/keys).
