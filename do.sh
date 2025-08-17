@@ -1,11 +1,11 @@
 #!/bin/bash
 
-SCRIPTS=("stow" "brew" "rust" "google-fonts" "custom-dirs" "ssh")
+scripts=("stow" "brew" "rust" "google-fonts" "custom-dirs" "ssh")
 
-for scirpt in "${SCRIPTS[@]}"
+for scirpt in "${scripts[@]}"
 do
-    echo "$scirpt.sh Applying"
-    path_to_script_file="$HOME/dotfiles/scripts/do/$scirpt.sh"
+    echo "Applying $scirpt.sh"
+    path_to_script_file=~/"dotfiles/scripts/do/$scirpt.sh"
     
     # set script to be executable
     chmod u+x "$path_to_script_file"
@@ -14,5 +14,8 @@ do
     # shellcheck source=/dev/null
     source "$path_to_script_file"
 
-    echo "$scirpt.sh Done"
+    echo "Applying $scirpt.sh Done"
+
+    printf "\n\n\n"
+    echo "--------------------------------------------------------------------------------"
 done
