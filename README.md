@@ -9,7 +9,7 @@ The dotfiles are expected to be used as-is, without any modification. A simple s
 🍉 Clone this repo:
 
 ```shell
-git clone https://github.com/youniverse-zhao/dotfiles.git ~/dotfiles
+git clone https://github.com/youniverse-zhao/dotfiles.git ~/dotfiles; cd dotfiles; git config core.fileMode false
 ```
 
 🍉 Run the _do.sh_ script:
