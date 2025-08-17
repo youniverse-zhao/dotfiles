@@ -1,16 +1,16 @@
-# Use stow to remove symbolic links for everything
-#
-# ~/dotfiles/undo/stow.sh
-
 #!/bin/bash
 
-cd "$HOME/dotfiles"; stow -D dots
+# Use stow to remove symbolic links for everything
+#
+# ~/dotfiles/scripts/undo/stow.sh
+
+cd "$HOME/dotfiles" || exit 1; stow -D dots
 
 project_root_dir="$HOME/dotfiles"
 path_to_backup_dir="$project_root_dir/original"
 
 items=("$path_to_backup_dir"/.*)
-for item in ${items[@]} ; 
+for item in "${items[@]}" ; 
 do
     filename=$(basename "$item")
 

@@ -1,8 +1,8 @@
+#!/bin/bash
+
 # Uninstall apps using Homebrew
 #
-# ~/dotfiles/undo/brew.sh
-
-#!/bin/bash
+# ~/dotfiles/scripts/undo/brew.sh
 
 brew uninstall --cask visual-studio-code jetbrains-toolbox postman docker lens warp cloudflare-warp raycast
 

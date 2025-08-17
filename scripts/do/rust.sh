@@ -1,8 +1,8 @@
+#!/bin/bash
+
 # Install rust
 # 
-# ~/dotfiles/do/rust.sh
-
-#!/bin/bash
+# ~/dotfiles/scripts/do/rust.sh
 
 # new dir will be created: ~/.cargo/bin
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

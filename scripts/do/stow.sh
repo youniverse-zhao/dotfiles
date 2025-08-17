@@ -1,8 +1,8 @@
+#!/bin/bash
+
 # Use stow to create symbolic links for everything
 #
-# ~/dotfiles/do/stow.sh
-
-#!/bin/bash
+# ~/dotfiles/scripts/do/stow.sh
 
 brew install stow
 
@@ -10,15 +10,15 @@ brew install stow
 # the glob expands to nothing instead of the pattern itself.
 shopt -s nullglob
 
-project_root_dir="$HOME/dotfiles"
-path_to_dots_dir="$project_root_dir/dots"
+path_to_project_dir="$HOME/dotfiles"
+path_to_project_dots_dir="$path_to_project_dir/dots"
 
 # Create ./original to backup existing dot files
-path_to_backup_dir="$project_root_dir/original"
+path_to_backup_dir="$path_to_project_dir/original"
 mkdir -p "$path_to_backup_dir"
 
-items=("$path_to_dots_dir"/.*)
-for item in ${items[@]} ; 
+items=("$path_to_project_dots_dir"/.*)
+for item in "${items[@]}" ; 
 do
     filename=$(basename "$item")
 
@@ -31,4 +31,4 @@ do
     fi
 done
 
-cd "$project_root_dir"; stow dots
+cd "$path_to_project_dir" || exit 1; stow dots
