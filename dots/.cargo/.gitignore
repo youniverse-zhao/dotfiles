@@ -1,0 +1,5 @@
+# ignore everything
+**/*
+
+# expect the following
+!.gitignore
