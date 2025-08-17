@@ -4,6 +4,14 @@
 #
 # ~/dotfiles/scripts/do/stow.sh
 
+# install homebrew
+if command -v brew &> /dev/null ; then
+    echo "Homebrew is installed"
+else
+    echo "Installing Homebrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
 brew install stow
 
 # Enable nullglob to ensure that if no files match the pattern,
