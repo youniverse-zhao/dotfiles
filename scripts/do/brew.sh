@@ -23,7 +23,7 @@ brew install zsh starship
 
 brew install aws-cdk kubectl helm
 
-brew install go
+brew install go nvm
 
 brew install --cask visual-studio-code jetbrains-toolbox postman docker lens warp cloudflare-warp raycast
 
