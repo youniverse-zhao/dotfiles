@@ -4,7 +4,7 @@
 #
 # ~/dotfiles/scripts/undo/ssh.sh
 
-path_to_project_ssh_dir="$HOME/dotfiles/dots/.ssh"
+path_to_project_ssh_dir=~/"dotfiles/dots/.ssh"
 keys_dir_name="keys"
 
 # $path_to_project_ssh_dir should be an symbolic link to a dir

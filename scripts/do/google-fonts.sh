@@ -5,7 +5,7 @@
 # ~/dotfiles/scripts/do/google-fonts.sh
 
 google_fonts_dir_name="google-fonts"
-path_to_google_fonts_dir="$HOME/Library/Fonts/$google_fonts_dir_name"
+path_to_google_fonts_dir=~/"Library/Fonts/$google_fonts_dir_name"
 
 if [ -d "$path_to_google_fonts_dir" ]; then
     echo "Directory $google_fonts_dir_name exists, update to the latest."

@@ -6,7 +6,7 @@
 
 my_email=youniverse.zhao@gmail.com
 
-path_to_project_ssh_dir="$HOME/dotfiles/dots/.ssh"
+path_to_project_ssh_dir=~/"dotfiles/dots/.ssh"
 keys_dir_name="keys"
 
 # $path_to_project_ssh_dir is a dir (don't need to worry about ~/.ssh)
@@ -16,17 +16,17 @@ if [ -d "$path_to_project_ssh_dir" ] ; then
     chmod 700 "$path_to_project_ssh_dir"
 
     # Create keys dir
-    path_to_keys_dir="$path_to_project_ssh_dir/$keys_dir_name"
-    mkdir -p "$path_to_keys_dir"
+    path_to_project_keys_dir="$path_to_project_ssh_dir/$keys_dir_name"
+    mkdir -p "$path_to_project_keys_dir"
 
     # All key pair names that need to be created
     new_github_key_pair_name="$(whoami)@$(hostname).github-id_ed25519"
-    KEY_NAMES=("$new_github_key_pair_name")
+    key_names=("$new_github_key_pair_name")
 
     # Generate keys for each key name
-    for key_name in "${KEY_NAMES[@]}"
+    for key_name in "${key_names[@]}"
     do
-        path_to_private_key="$path_to_keys_dir/$key_name"
+        path_to_private_key="$path_to_project_keys_dir/$key_name"
         path_to_public_key="$path_to_private_key.pub"
     
         # check if SSH key already exists
@@ -44,7 +44,7 @@ if [ -d "$path_to_project_ssh_dir" ] ; then
 
     # Create ~/dotfiles/dots/.ssh/config from config.template
     path_to_my_github_key=~/".ssh/$keys_dir_name/$new_github_key_pair_name"
-    path_to_ssh_config_file="$HOME/dotfiles/dots/.ssh/config"
+    path_to_ssh_config_file=~/"dotfiles/dots/.ssh/config"
     sed "s#<PATH_TO_MY_GITHUB_KEY>#$path_to_my_github_key#g" "$path_to_ssh_config_file.template" > "$path_to_ssh_config_file"
     
     echo "SSH setup complete!"
