@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scripts=("stow" "brew" "rust" "google-fonts" "custom-dirs" "ssh")
+scripts=("google-fonts" "custom-dirs" "stow" "brew" "rust" "ssh")
 
 for scirpt in "${scripts[@]}"
 do
