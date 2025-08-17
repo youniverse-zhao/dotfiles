@@ -1,8 +1,8 @@
+#!/bin/bash
+
 # Uninstall rust
 # 
-# ~/dotfiles/undo/rust.sh
-
-#!/bin/bash
+# ~/dotfiles/scripts/undo/rust.sh
 
 if command -v rustup &> /dev/null ; then
     echo "rustup is available, uninstalling rust using rustup..."

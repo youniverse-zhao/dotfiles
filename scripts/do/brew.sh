@@ -1,8 +1,8 @@
+#!/bin/bash
+
 # Install apps using Homebrew
 #
-# ~/dotfiles/do/brew.sh
-
-#!/bin/bash
+# ~/dotfiles/scripts/do/brew.sh
 
 # install homebrew
 if command -v brew &> /dev/null ; then

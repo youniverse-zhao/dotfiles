@@ -1,12 +1,12 @@
-# Create custom folders
-#
-# ~/dotfiles/do/custom-dirs.sh
-
 #!/bin/bash
 
-folder_names=("Captures" "Vault" "Notes")
+# Create custom folders
+#
+# ~/dotfiles/scripts/do/custom-dirs.sh
 
-for folder_name in ${folder_names[@]}
+folder_names=("Captures" "Vault")
+
+for folder_name in "${folder_names[@]}"
 do
     if [ ! -d "$HOME/$folder_name" ]; then
         mkdir -p "$HOME/$folder_name"
