@@ -1,0 +1,9 @@
+# ignore everything
+**/*
+
+# expect the following
+!.gitignore
+
+!alacritty
+!nvm
+!starship.toml

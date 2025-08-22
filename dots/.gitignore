@@ -1,0 +1,22 @@
+# ignore everything
+**/*
+
+# expect the following
+
+# folders
+!.cargo
+!.config
+!.nvm
+!.rustup
+!.ssh
+!.vscode
+
+# files
+!.gitconfig
+!.gitignore
+!.zprofile
+!.zshrc
+
+# templates
+!.zshenv.template
+
