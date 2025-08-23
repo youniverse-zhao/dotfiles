@@ -4,7 +4,7 @@
 #
 # ~/dotfiles/scripts/undo/custom-dirs.sh
 
-folder_names=("Pictures/Captures" "Developer" "Vault")
+folder_names=("Pictures/Captures" "Movies/Recordings" "Developer" "Vault")
 
 for folder_name in "${folder_names[@]}"
 do
