@@ -3,3 +3,6 @@
     email = youniverse.zhao@gmail.com
 [url "ssh://git@github.com:youniverse-zhao/"]
     insteadOf = https://github.com/youniverse-zhao/
+[core]
+	quotepath = false # disable the default behavior of escaping non-ASCII characters
+    
